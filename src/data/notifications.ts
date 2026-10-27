@@ -1,0 +1,58 @@
+import type { DriverNotification } from "@/data/types";
+
+export const seedNotifications: DriverNotification[] = [
+  {
+    id: "n1",
+    kind: "assignment",
+    title: "New assignment",
+    body: "SE-1860 · STAT specimen · Chippenham to Labcorp.",
+    at: "2026-10-24T08:05:00-04:00",
+    read: false,
+    href: "/jobs",
+  },
+  {
+    id: "n2",
+    kind: "schedule",
+    title: "Schedule change",
+    body: "SE-1858 window moved to 1:15–2:00 PM ET.",
+    at: "2026-10-24T07:40:00-04:00",
+    read: false,
+    href: "/schedule",
+  },
+  {
+    id: "n3",
+    kind: "cancel",
+    title: "Shipment cancelled",
+    body: "SE-1810 was cancelled by dispatch. Facility closed early.",
+    at: "2026-10-23T16:12:00-04:00",
+    read: true,
+    href: "/jobs/SE-1810",
+  },
+  {
+    id: "n4",
+    kind: "message",
+    title: "Dispatch message",
+    body: "Stay with the cooler on SE-1842.",
+    at: "2026-10-24T07:30:00-04:00",
+    read: true,
+    href: "/messages/dispatch",
+  },
+  {
+    id: "n5",
+    kind: "expiry",
+    title: "Document expired",
+    body: "Training / handling certification is expired. Upload a new certificate.",
+    at: "2026-10-22T09:00:00-04:00",
+    read: false,
+    href: "/verification",
+  },
+  {
+    id: "n6",
+    kind: "payout",
+    title: "Payout processed",
+    body: "Weekly payout of $642.10 was sent to your account.",
+    at: "2026-10-17T08:00:00-04:00",
+    read: true,
+    href: "/earnings",
+  },
+];
